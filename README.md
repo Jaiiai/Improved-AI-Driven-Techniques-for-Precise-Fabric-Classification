@@ -1,4 +1,5 @@
-# Sparse Reflectance Maps for Fabric Characterization
+# Improved-AI-Driven-Techniques-for-Precise-Fabric-Classification
+
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
