@@ -110,7 +110,8 @@ A margin-based classifier for high-dimensional image representations.
 A transfer learning approach for end-to-end classification using a lightweight convolutional backbone.
 
 ## Method Summary
-<img width="1264" height="843" alt="generated_image_1" src="https://github.com/user-attachments/assets/b66f1fdd-8184-4a1a-9624-2b2abda8d295" />
+<img width="1264" height="843" alt="image" src="https://github.com/user-attachments/assets/577f7042-1915-4905-87ea-60bee056e1f7" />
+
 
 
 
