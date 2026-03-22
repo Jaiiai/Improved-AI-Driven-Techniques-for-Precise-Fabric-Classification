@@ -30,6 +30,13 @@ The goal is to provide a reproducible framework for:
 - experimentation with both classical machine learning and modern deep learning methods
 
 
+## Dataset Source
+
+The dataset used in this project is publicly available on Kaggle:
+
+[Sparse Reflectance Maps for Fabric Characterization](https://www.kaggle.com/datasets/ritzz08/sparsereflectance-maps-for-fabric-characterization)
+
+
 
 ## Highlights
 
