@@ -1,26 +1,143 @@
-## 👋 Welcome to the **𝑰𝒎𝒑𝒓𝒐𝒗𝒆𝒅 𝑨𝑰-𝑫𝒓𝒊𝒗𝒆𝒏 𝑻𝒆𝒄𝒉𝒏𝒊𝒒𝒖𝒆𝒔 𝒇𝒐𝒓 𝑷𝒓𝒆𝒄𝒊𝒔𝒆 𝑭𝒂𝒃𝒓𝒊𝒄 𝑪𝒍𝒂𝒔𝒔𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏** repository. 
-This project explores multiple machine learning and deep learning approaches to accurately classify fabric types based on image data. 
+# Sparse Reflectance Maps for Fabric Characterization
 
-## Important Notes Before Running
-1. **Directory Path**: Ensure that the dataset path inside every program cell is changed to:
-   `SparseReflectance-Maps-for-Fabric-Characterization`
-2. **Execution**: Please **execute each cell/program separately one by one**. These models require a lot of computation, and running them simultaneously may cause memory issues or crashes.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-yellow)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+A machine learning and deep learning project for **fabric classification** using **sparse reflectance map images**. This repository implements and compares **6 different classification programs**, ranging from traditional machine learning models to transfer learning-based convolutional neural networks.
 
 
-##  Environment Requirements
+## Overview
 
-To run the programs in this repository, ensure you have the following libraries installed:
+Fabric characterization is an important task in computer vision and material recognition. This project explores multiple approaches for recognizing fabric types from image data stored as **sparse reflectance maps**.
 
-- Python 3.8+
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- scikit-learn
-- TensorFlow 2.x
-- Keras
-- PIL (Pillow)
+The repository includes:
 
-You can install the required packages using pip:
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn tensorflow pillow# Improved-AI-Driven-Techniques-for-Precise-Fabric-Classification
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+- Convolutional Neural Network (CNN)
+
+The goal is to provide a reproducible framework for:
+
+- fabric image classification
+- model comparison
+- performance evaluation
+- experimentation with both classical machine learning and modern deep learning methods
+
+
+
+## Highlights
+
+- Implements **6 classification programs**
+- Supports both **traditional machine learning** and **deep learning**
+- Includes **data visualization**, **model evaluation**, and **confusion matrix analysis**
+- Uses **transfer learning** with:
+  - **VGG16** for feature extraction
+  - **MobileNetV2** for CNN classification
+- Suitable for:
+  - research experiments
+  - benchmarking
+  - coursework
+  - future extension into material recognition pipelines
+
+---
+
+## Important Notes
+
+### 1. Working Directory Path
+
+Please ensure that the path/directory inside **every program cell** is set to:
+
+```python
+path = 'SparseReflectance-Maps-for-Fabric-Characterization'
+```
+
+### 2. Execution
+All notebook cells should be executed sequentially, one at a time.
+
+Running all cells simultaneously is not recommended, as several stages may require substantial memory and computational time, particularly for:
+
+VGG16-based feature extraction
+MobileNetV2-based CNN training
+large image collections
+
+## Repository Layout
+```python
+SparseReflectance-Maps-for-Fabric-Characterization/
+├── data/
+│   ├── class_1/
+│   ├── class_2/
+│   └── ...
+├── program1_logistic_regression.ipynb
+├── program2_decision_tree.ipynb
+├── program3_random_forest.ipynb
+├── program4_knn.ipynb
+├── program5_svm.ipynb
+├── program6_cnn.ipynb
+└── README.md
+```
+The dataset should be organized by class, with each category stored in an individual subdirectory under data/.
+
+## Experimental Methods
+Logistic Regression
+Used as a linear baseline for supervised fabric classification.
+
+### Decision Tree
+A tree-based classifier with standard preprocessing and parameter optimization.
+
+### Random Forest
+An ensemble-based approach for improved robustness and comparative evaluation.
+
+### KNN with VGG16 Features
+A hybrid pipeline combining deep feature extraction with instance-based classification.
+
+### Support Vector Machine
+A margin-based classifier for high-dimensional image representations.
+
+### CNN with MobileNetV2
+A transfer learning approach for end-to-end classification using a lightweight convolutional backbone.
+
+## Method Summary
+<img width="1264" height="843" alt="generated_image_1" src="https://github.com/user-attachments/assets/b66f1fdd-8184-4a1a-9624-2b2abda8d295" />
+
+
+
+## Running the Programs
+Before execution, confirm:
+```python
+path = 'SparseReflectance-Maps-for-Fabric-Characterization'
+```
+Then run the notebooks individually and sequentially.
+
+Example:
+```python
+python program1_logistic_regression.py
+python program2_decision_tree.py
+python program3_random_forest.py
+python program4_knn.py
+python program5_svm.py
+python program6_cnn.py
+```
+If using Jupyter Notebook, execute each cell in order.
+
+## Evaluation Outputs
+The repository is intended to produce the following forms of experimental output:
+
+- classification accuracy
+- precision, recall, and F1-score
+- confusion matrices
+- training and validation curves
+- comparative performance across methods
+
+## Future Work
+Possible extensions include:
+
+- additional CNN architectures
+- data augmentation
+- larger-scale dataset evaluation
+- explainable AI techniques such as Grad-CAM
+- deployment of trained models
